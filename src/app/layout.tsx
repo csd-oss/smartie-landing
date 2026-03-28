@@ -11,8 +11,8 @@ const outfit = Outfit({
 
 export const metadata: Metadata = {
   title: {
-    default: `${COMPANY.name} | Software Development`,
-    template: `%s | ${COMPANY.name}`,
+    default: `${COMPANY.shortName} | Software Development`,
+    template: `%s | ${COMPANY.shortName}`,
   },
   description:
     "Smartie is a software development company based in Bratislava, Slovakia, building mobile applications for everyday life.",
@@ -21,8 +21,8 @@ export const metadata: Metadata = {
     type: "website",
     locale: "en_US",
     url: COMPANY.url,
-    siteName: COMPANY.name,
-    title: `${COMPANY.name} | Software Development`,
+    siteName: COMPANY.shortName,
+    title: `${COMPANY.shortName} | Software Development`,
     description:
       "Software development company based in Bratislava, Slovakia. Building mobile apps for everyday life.",
   },
