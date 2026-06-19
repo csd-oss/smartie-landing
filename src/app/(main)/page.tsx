@@ -1,6 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Image from "next/image";
 import Link from "next/link";
 import { COMPANY, APPS } from "@/lib/constants";
 
@@ -301,20 +302,34 @@ export default function Home() {
                   marginBottom: 16,
                 }}
               >
-                <div
-                  style={{
-                    width: 56,
-                    height: 56,
-                    borderRadius: 16,
-                    background: "linear-gradient(135deg, #86A37F, #6B8A64)",
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    fontSize: 24,
-                  }}
-                >
-                  🚗
-                </div>
+                {app.icon ? (
+                  <Image
+                    src={app.icon}
+                    alt={`${app.name} app icon`}
+                    width={56}
+                    height={56}
+                    style={{
+                      borderRadius: 14,
+                      display: "block",
+                      boxShadow: "0 4px 14px rgba(0,0,0,0.12)",
+                    }}
+                  />
+                ) : (
+                  <div
+                    style={{
+                      width: 56,
+                      height: 56,
+                      borderRadius: 16,
+                      background: "linear-gradient(135deg, #86A37F, #6B8A64)",
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                      fontSize: 24,
+                    }}
+                  >
+                    🚗
+                  </div>
+                )}
                 <div>
                   <h3
                     style={{
