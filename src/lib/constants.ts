@@ -38,6 +38,7 @@ export const APPS = [
     platforms: ["iOS", "Android"] as const,
     privacyUrl: "/driver-sk/privacy",
     termsUrl: "/driver-sk/terms",
+    supportUrl: "/driver-sk/support",
     legalUpdated: "June 10, 2026",
   },
 ] as const;

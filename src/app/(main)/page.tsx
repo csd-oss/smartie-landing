@@ -379,7 +379,7 @@ export default function Home() {
                   </span>
                 ))}
               </div>
-              {(app.privacyUrl || app.termsUrl) && (
+              {(app.supportUrl || app.privacyUrl || app.termsUrl) && (
                 <div
                   style={{
                     display: "flex",
@@ -387,8 +387,22 @@ export default function Home() {
                     marginTop: 24,
                     paddingTop: 20,
                     borderTop: "1px solid rgba(44,36,32,0.06)",
+                    flexWrap: "wrap",
                   }}
                 >
+                  {app.supportUrl && (
+                    <Link
+                      href={app.supportUrl}
+                      style={{
+                        fontSize: 12,
+                        fontWeight: 500,
+                        color: "#8B7B6B",
+                        textDecoration: "none",
+                      }}
+                    >
+                      Support
+                    </Link>
+                  )}
                   {app.privacyUrl && (
                     <Link
                       href={app.privacyUrl}

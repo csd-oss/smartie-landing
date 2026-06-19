@@ -331,7 +331,20 @@ export default function DriverSkPrivacyPolicy() {
         <p style={{ margin: "0 0 8px" }}>
           {COMPANY.fullAddress} — {COMPANY.court}
         </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: 16 }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: 16,
+            flexWrap: "wrap",
+          }}
+        >
+          <Link
+            href="/driver-sk/support"
+            style={{ color: "#A89888", fontSize: 12, textDecoration: "none" }}
+          >
+            Driver SK Support
+          </Link>
           <Link
             href="/driver-sk/privacy"
             style={{ color: "#C4633F", fontSize: 12, textDecoration: "none" }}
