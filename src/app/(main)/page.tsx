@@ -362,6 +362,21 @@ export default function Home() {
               >
                 {app.description}
               </p>
+              <Link
+                href={`/${app.slug}`}
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  gap: 6,
+                  fontSize: 13,
+                  fontWeight: 600,
+                  color: "#C4633F",
+                  textDecoration: "none",
+                  marginBottom: 20,
+                }}
+              >
+                Learn more about {app.name} →
+              </Link>
               <div style={{ display: "flex", gap: 8, flexWrap: "wrap" }}>
                 {app.features.map((f) => (
                   <span
