@@ -25,9 +25,9 @@ export const APPS = [
     contactEmail: "hello-driver@smartie.team",
     tagline: "Your driving exam companion",
     description:
-      "Master the Slovak driving theory exam with 1,000+ official practice questions, an adaptive study algorithm, and realistic mock exams — all completely offline.",
+      "Master the Slovak driving theory exam with 985 official practice questions, an adaptive study algorithm, and realistic mock exams — all completely offline.",
     features: [
-      "1,000+ Questions",
+      "985 Questions",
       "3 Languages",
       "Works Offline",
       "Smart Algorithm",
