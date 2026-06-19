@@ -364,6 +364,44 @@ export default function Home() {
                   </span>
                 ))}
               </div>
+              {(app.privacyUrl || app.termsUrl) && (
+                <div
+                  style={{
+                    display: "flex",
+                    gap: 18,
+                    marginTop: 24,
+                    paddingTop: 20,
+                    borderTop: "1px solid rgba(44,36,32,0.06)",
+                  }}
+                >
+                  {app.privacyUrl && (
+                    <Link
+                      href={app.privacyUrl}
+                      style={{
+                        fontSize: 12,
+                        fontWeight: 500,
+                        color: "#8B7B6B",
+                        textDecoration: "none",
+                      }}
+                    >
+                      Privacy Policy
+                    </Link>
+                  )}
+                  {app.termsUrl && (
+                    <Link
+                      href={app.termsUrl}
+                      style={{
+                        fontSize: 12,
+                        fontWeight: 500,
+                        color: "#8B7B6B",
+                        textDecoration: "none",
+                      }}
+                    >
+                      Terms of Service
+                    </Link>
+                  )}
+                </div>
+              )}
             </motion.div>
           ))}
 
@@ -499,23 +537,9 @@ export default function Home() {
         <p style={{ margin: "0 0 4px" }}>
           © {new Date().getFullYear()} {COMPANY.name} — IČO: {COMPANY.ico}
         </p>
-        <p style={{ margin: "0 0 8px" }}>
+        <p style={{ margin: 0 }}>
           {COMPANY.fullAddress} — {COMPANY.court}
         </p>
-        <div style={{ display: "flex", justifyContent: "center", gap: 16 }}>
-          <Link
-            href="/privacy"
-            style={{ color: "#A89888", fontSize: 12, textDecoration: "none" }}
-          >
-            Privacy Policy
-          </Link>
-          <Link
-            href="/terms"
-            style={{ color: "#A89888", fontSize: 12, textDecoration: "none" }}
-          >
-            Terms of Service
-          </Link>
-        </div>
       </footer>
     </div>
   );

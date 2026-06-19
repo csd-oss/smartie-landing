@@ -3,10 +3,10 @@ import Link from "next/link";
 import { COMPANY } from "@/lib/constants";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy",
+  title: "Driver SK — Privacy Policy",
 };
 
-export default function PrivacyPolicy() {
+export default function DriverSkPrivacyPolicy() {
   return (
     <div
       style={{
@@ -101,7 +101,7 @@ export default function PrivacyPolicy() {
               marginBottom: 12,
             }}
           >
-            Legal
+            Driver SK · Legal
           </div>
           <h1
             style={{
@@ -114,7 +114,7 @@ export default function PrivacyPolicy() {
             Privacy Policy
           </h1>
           <p style={{ fontSize: 13, color: "#A89888", margin: 0 }}>
-            Last updated: March 27, 2026
+            Last updated: June 10, 2026
           </p>
         </header>
 
@@ -128,128 +128,139 @@ export default function PrivacyPolicy() {
         >
           <Section title="1. Introduction">
             <p>
-              {COMPANY.name} (&ldquo;we&rdquo;, &ldquo;our&rdquo;, or
-              &ldquo;us&rdquo;), a company registered in the Slovak Republic with
-              IČO {COMPANY.ico}, having its registered office at{" "}
-              {COMPANY.fullAddress}, is committed to protecting your privacy.
+              Driver SK is an offline-first study app for the Slovak
+              driving-licence theory test, available in Slovak, English, and
+              Hungarian. It is published by {COMPANY.name}, a company registered
+              in the Slovak Republic with IČO {COMPANY.ico}, having its
+              registered office at {COMPANY.fullAddress}.
             </p>
             <p>
-              This Privacy Policy explains how we collect, use, and protect
-              information when you use our mobile applications and visit our
-              website at {COMPANY.url}.
+              This Privacy Policy explains what data the Driver SK app handles
+              and what choices you have. It applies to the Driver SK app only.
             </p>
           </Section>
 
-          <Section title="2. Data We Collect">
-            <H3>Mobile Applications</H3>
-            <p>
-              Our mobile applications are designed to work entirely offline. We
-              do not collect, store, or transmit personal data from our apps to
-              any external servers. All your data — including progress, settings,
-              and preferences — is stored locally on your device.
-            </p>
-
-            <H3>Optional Analytics</H3>
-            <p>
-              Some of our apps may include optional, anonymized usage analytics
-              to help us improve the user experience. You can opt out of
-              analytics at any time from the app settings. When analytics are
-              enabled, we may collect:
-            </p>
-            <Ul>
-              <li>Anonymous usage patterns (screens viewed, features used)</li>
-              <li>Device type and operating system version</li>
-              <li>App version</li>
-              <li>Crash reports</li>
-            </Ul>
-            <p>
-              This data is anonymized and cannot be used to identify you
-              personally.
-            </p>
-
-            <H3>Website</H3>
-            <p>
-              Our website does not use cookies or tracking technologies. We do
-              not collect personal data through our website unless you contact us
-              directly via email.
-            </p>
-          </Section>
-
-          <Section title="3. How We Use Your Data">
-            <p>
-              When analytics data is collected (with your consent), we use it
-              solely to:
-            </p>
-            <Ul>
-              <li>Improve app functionality and user experience</li>
-              <li>Identify and fix bugs and crashes</li>
-              <li>Understand which features are most valuable to users</li>
-            </Ul>
-            <p>
-              We do not sell, rent, or share your data with third parties for
-              marketing purposes.
-            </p>
-          </Section>
-
-          <Section title="4. Data Storage and Security">
-            <p>
-              All app data is stored locally on your device using secure,
-              industry-standard storage mechanisms. We do not operate servers
-              that store your personal data.
-            </p>
-            <p>
-              If you delete an app, all locally stored data will be permanently
-              removed from your device.
-            </p>
-          </Section>
-
-          <Section title="5. Third-Party Services">
-            <p>Our apps may use the following third-party services:</p>
+          <Section title="2. At a glance">
             <Ul>
               <li>
-                <strong>Apple App Store / Google Play Store:</strong> These
-                platforms have their own privacy policies governing app
-                distribution and payments.
+                Driver SK works <strong>without an account</strong>. We do not
+                know your name, email, or phone number.
               </li>
               <li>
-                <strong>PostHog (optional analytics):</strong> When analytics are
-                enabled, anonymized usage data may be processed by PostHog. See
-                their privacy policy at posthog.com/privacy.
+                Your study progress and preferences are stored{" "}
+                <strong>locally on your device</strong> and never leave it.
+              </li>
+              <li>
+                We collect <strong>anonymous usage analytics</strong>, which you
+                can turn off in Settings.
+              </li>
+              <li>
+                Purchases are processed by <strong>Apple</strong> and{" "}
+                <strong>RevenueCat</strong>; we never see your payment details.
               </li>
             </Ul>
           </Section>
 
-          <Section title="6. Your Rights Under GDPR">
+          <Section title="3. Data Stored Only on Your Device">
             <p>
-              As a company operating within the European Union, we comply with
-              the General Data Protection Regulation (GDPR). You have the right
-              to:
+              All of your study data is stored locally in a database on your
+              device and is not transmitted to us. This includes:
             </p>
             <Ul>
+              <li>Your answers, mistakes, streaks, and mock-exam history</li>
               <li>
-                <strong>Access</strong> — request a copy of any personal data we
-                hold about you
-              </li>
-              <li>
-                <strong>Rectification</strong> — request correction of
-                inaccurate data
-              </li>
-              <li>
-                <strong>Erasure</strong> — request deletion of your personal data
-              </li>
-              <li>
-                <strong>Restriction</strong> — request restriction of processing
-              </li>
-              <li>
-                <strong>Portability</strong> — request your data in a portable
-                format
-              </li>
-              <li>
-                <strong>Objection</strong> — object to processing of your data
+                Your language, category, notification, and readiness-mode
+                preferences
               </li>
             </Ul>
             <p>
-              To exercise any of these rights, contact us at{" "}
+              Deleting the app deletes this data. The &ldquo;Reset
+              Progress&rdquo; option in Settings also erases it.
+            </p>
+          </Section>
+
+          <Section title="4. Anonymous Analytics (PostHog)">
+            <p>
+              To understand how the app is used and to improve it, we collect
+              anonymous usage events through PostHog (PostHog EU/US,
+              posthog.com), such as:
+            </p>
+            <Ul>
+              <li>Screens viewed and buttons tapped</li>
+              <li>
+                Study activity (for example, a question answered correctly or
+                incorrectly), mock-exam outcomes, and onboarding progress
+              </li>
+              <li>App errors and crashes</li>
+              <li>
+                Device type, OS version, app version, and a{" "}
+                <strong>random installation identifier</strong>
+              </li>
+            </Ul>
+            <p>
+              The installation identifier is random, created on first launch,
+              and is not linked to your identity. We do not collect names, email
+              addresses, contacts, location, photos, or advertising identifiers,
+              and we do not track you across other apps or websites.
+            </p>
+            <p>
+              <strong>Opt-out:</strong> Settings → Analytics. When you opt out,
+              no analytics events are sent.
+            </p>
+          </Section>
+
+          <Section title="5. Purchases (Apple & RevenueCat)">
+            <p>
+              Driver SK Pro is available as a subscription or a one-time
+              purchase. Purchases are processed by Apple. We use RevenueCat
+              (revenuecat.com) to validate purchases and manage subscription
+              status. RevenueCat receives an anonymous app-user identifier and
+              your purchase receipt from Apple — never your payment details. See
+              RevenueCat&apos;s privacy policy at{" "}
+              <a
+                href="https://www.revenuecat.com/privacy"
+                style={{ color: "#C4633F", textDecoration: "underline" }}
+              >
+                revenuecat.com/privacy
+              </a>
+              .
+            </p>
+          </Section>
+
+          <Section title="6. Notifications">
+            <p>
+              Study reminders are <strong>local notifications</strong> scheduled
+              on your device. No push tokens are created and no notification data
+              is sent to any server. You can disable each reminder in Settings or
+              in your system notification settings.
+            </p>
+          </Section>
+
+          <Section title="7. Data Sharing and Sale">
+            <p>
+              We do not sell, rent, or share your data with third parties beyond
+              the service providers named above (PostHog for analytics, and
+              RevenueCat and Apple for purchases), who process it on our behalf.
+            </p>
+          </Section>
+
+          <Section title="8. Children's Privacy">
+            <p>
+              Driver SK is intended for users preparing for a driving licence
+              (15+). It collects no personal information from anyone, including
+              children. If you believe a child has provided us with personal
+              data, please contact us and we will promptly delete it.
+            </p>
+          </Section>
+
+          <Section title="9. Your Rights Under GDPR">
+            <p>
+              {COMPANY.name} operates within the European Union and complies with
+              the General Data Protection Regulation (GDPR). The analytics data
+              we collect is anonymous and cannot be linked back to you. If you
+              have any question or request regarding your data — including
+              deletion of analytics data associated with your installation
+              identifier, where technically possible — contact us at{" "}
               <a
                 href={`mailto:${COMPANY.email}`}
                 style={{ color: "#C4633F", textDecoration: "underline" }}
@@ -266,25 +277,16 @@ export default function PrivacyPolicy() {
             </p>
           </Section>
 
-          <Section title="7. Children's Privacy">
+          <Section title="10. Changes to This Policy">
             <p>
-              Our apps are not directed at children under the age of 16. We do
-              not knowingly collect personal information from children. If you
-              believe a child has provided us with personal data, please contact
-              us and we will promptly delete it.
+              We may update this Privacy Policy as the app evolves. The current
+              version is always available at this address, and material changes
+              will be noted in the app&apos;s release notes with an updated
+              &ldquo;Last updated&rdquo; date.
             </p>
           </Section>
 
-          <Section title="8. Changes to This Policy">
-            <p>
-              We may update this Privacy Policy from time to time. Any changes
-              will be posted on this page with an updated &ldquo;Last
-              updated&rdquo; date. We encourage you to review this policy
-              periodically.
-            </p>
-          </Section>
-
-          <Section title="9. Contact Us">
+          <Section title="11. Contact Us">
             <p>
               If you have questions about this Privacy Policy, please contact us:
             </p>
@@ -327,16 +329,16 @@ export default function PrivacyPolicy() {
         </p>
         <div style={{ display: "flex", justifyContent: "center", gap: 16 }}>
           <Link
-            href="/privacy"
+            href="/driver-sk/privacy"
             style={{ color: "#C4633F", fontSize: 12, textDecoration: "none" }}
           >
-            Privacy Policy
+            Driver SK Privacy Policy
           </Link>
           <Link
-            href="/terms"
+            href="/driver-sk/terms"
             style={{ color: "#A89888", fontSize: 12, textDecoration: "none" }}
           >
-            Terms of Service
+            Driver SK Terms of Service
           </Link>
         </div>
       </footer>
@@ -368,21 +370,6 @@ function Section({
         {children}
       </div>
     </section>
-  );
-}
-
-function H3({ children }: { children: React.ReactNode }) {
-  return (
-    <h3
-      style={{
-        fontSize: 15,
-        fontWeight: 600,
-        color: "#2C2420",
-        margin: "8px 0 0",
-      }}
-    >
-      {children}
-    </h3>
   );
 }
 
