@@ -22,6 +22,7 @@ export const APPS = [
     name: "Driver SK",
     slug: "driver-sk",
     icon: "/driver-sk-icon.png",
+    contactEmail: "hello-driver@smartie.team",
     tagline: "Your driving exam companion",
     description:
       "Master the Slovak driving theory exam with 1,000+ official practice questions, an adaptive study algorithm, and realistic mock exams — all completely offline.",

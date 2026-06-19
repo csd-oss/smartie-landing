@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import Link from "next/link";
-import { COMPANY } from "@/lib/constants";
+import { APPS, COMPANY } from "@/lib/constants";
+
+const CONTACT_EMAIL =
+  APPS.find((a) => a.slug === "driver-sk")?.contactEmail ?? COMPANY.email;
 
 export const metadata: Metadata = {
   title: "Driver SK — Privacy Policy",
@@ -263,10 +266,10 @@ export default function DriverSkPrivacyPolicy() {
               deletion of analytics data associated with your installation
               identifier, where technically possible — contact us at{" "}
               <a
-                href={`mailto:${COMPANY.email}`}
+                href={`mailto:${CONTACT_EMAIL}`}
                 style={{ color: "#C4633F", textDecoration: "underline" }}
               >
-                {COMPANY.email}
+                {CONTACT_EMAIL}
               </a>
               .
             </p>
@@ -295,10 +298,10 @@ export default function DriverSkPrivacyPolicy() {
               <li>
                 Email:{" "}
                 <a
-                  href={`mailto:${COMPANY.email}`}
+                  href={`mailto:${CONTACT_EMAIL}`}
                   style={{ color: "#C4633F", textDecoration: "underline" }}
                 >
-                  {COMPANY.email}
+                  {CONTACT_EMAIL}
                 </a>
               </li>
               <li>Phone: {COMPANY.phone}</li>
