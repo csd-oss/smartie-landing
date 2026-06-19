@@ -246,10 +246,11 @@ export default function DriverSkPrivacyPolicy() {
 
           <Section title="8. Children's Privacy">
             <p>
-              Driver SK is intended for users preparing for a driving licence
-              (15+). It collects no personal information from anyone, including
-              children. If you believe a child has provided us with personal
-              data, please contact us and we will promptly delete it.
+              Driver SK contains no age-restricted content and is rated 4+ on the
+              App Store, making it suitable for all ages. It collects no personal
+              information from anyone, including children. If you believe a child
+              has provided us with personal data, please contact us and we will
+              promptly delete it.
             </p>
           </Section>
 
